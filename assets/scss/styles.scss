@@ -1,0 +1,328 @@
+$primary-color: #e92076;
+$secondary-color: #ffa400;
+$secondary-color-alpha: rgba(255,164,0,0.8);
+$white-alpha: rgba(255,255,255,0.8);
+
+/* FONTS */
+@font-face {
+    font-family: 'neosansmedium';
+    src: url("../fonts/neosans-medium-webfont.woff2") format("woff2"), url("../fonts/neosans-medium-webfont.woff") format("woff");
+    font-weight: bold;
+    font-style: normal; }
+@font-face {
+    font-family: 'neosansregular';
+    src: url("../fonts/neosans-light-webfont.woff2") format("woff2"), url("../fonts/neosans-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal; }
+
+/* TAGS */
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    background-color: #f7f6f2;
+}
+body > .container{
+    padding-top:50px;
+    padding-bottom:60px;
+}
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFA400; }
+
+h1 {
+    font-size: 24px; }
+
+h2 {
+    font-size: 18px; }
+
+h3 {
+    font-size: 14px; }
+
+
+/* STYLES */
+.btn-primary{
+    background-color:$secondary-color-alpha;
+    border-color: $secondary-color}
+.btn-primary:hover{
+    background-color:$secondary-color;
+    border-color:  $secondary-color;
+}
+
+/* SHARED */
+.page{
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom:0px;
+    box-sizing: border-box;
+    position: absolute;
+    overflow-y: hidden;
+}
+.overlay{
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom:25px;
+    overflow: auto;
+    position:absolute;
+    background-color: $white-alpha;
+}
+.overlay .container{
+    padding-bottom: 20px;
+}
+.page .overlay{
+    top:0;
+}
+
+/* PAGES */
+#home, #login, #regulamento, #enredo, #votacao, #erro, #erro404 {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background:url('/assets/img/bg01.jpg') no-repeat center top fixed;
+    background-size: cover;
+}
+
+#home{
+    #logo-indra{
+        position: absolute;
+        width: 100%;
+        top:15%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+
+    #logo-carnaval{
+        position: absolute;
+        width: 100%;
+        top:35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        img{
+            max-width: 100%;
+        }
+    }
+    .botoes{
+        position:absolute;
+        width: 100%;
+        top:65%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .btn{
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
+
+.panel-default > .panel-heading{
+    background-color:  #FFA400;
+    color: #fff;
+}
+
+#regulamento{
+    .container{
+        background-color: white;
+    }
+    h1{
+        margin-top: 30px;
+    }
+    h2{
+        margin-top: 40px;
+    }
+}
+#votacao .votacao{
+    padding-top:30px;
+    background-color: white;
+    min-height: 100%;
+}
+#votacao .title{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#votacao .author{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#erro .container{
+    min-height: 100%;
+}
+.modal-header{
+    background-color:$secondary-color;
+    color:#fff;
+}
+.nav-pills {
+    padding-top: 5px; }
+
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0px;
+}
+.navbar-default{
+    background-color: #FFA400;
+}
+.navbar-brand {
+    font-family: "neosansmedium";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff; }
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff; }
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: #fff; }
+
+.sections {
+    margin-top: 40px; }
+
+.label-home {
+    font-family: 'neosansmedium', arial;
+    position: relative;
+    margin-top: 0px;
+    height: 35px;
+    max-width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9em; }
+.label-home a {
+    color: #fff; }
+.label-home a:hover {
+    color: #e92076;
+    text-decoration: none; }
+
+.sections-header {
+    position: relative;
+    margin-bottom: 15px; }
+
+footer {
+    margin-top: 20px;
+    background-color: #FFA400;
+    padding: 5px;
+    font-size: 0.8em;
+    color: white; }
+footer a {
+    color: white; }
+footer a:hover {
+    color: white; }
+
+.banner {
+    border-radius: 10px;
+    overflow: hidden; }
+
+.card {
+    border: 1px solid gray;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 10px; }
+.card .like {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border: 1px solid gray;
+    border-radius: 0 6px 0 5px;
+    background-color: lightgray; }
+.card .red {
+    color: #e92076; }
+.card .white {
+    color: white; }
+.card .gray {
+    color: gray; }
+.card .btn {
+    color: gray; }
+.card .title {
+    font-weight: bold; }
+.card .author {
+    font-size: 0.8em; }
+.card .enredo {
+    height: 120px;
+    font-size: 0.9em;
+    overflow-y: scroll; }
+
+.login {
+    margin-top: 60px; }
+
+#myModal {
+    margin-top: 100px; }
+
+.modal-backdrop {
+    background-color: #fff; }
+
+.modal-backdrop.in {
+    opacity: 0.8; }
+
+
+.boxEnredo {
+    height: 150px;
+    overflow-y: auto; }
+
+.sb-60px {
+    margin-top: 60px; }
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .navbar-header{
+        width: 100%;
+
+    }
+    .navbar-brand{
+        width: 100%;
+        text-align: left;
+        padding-left: 30px;
+    }
+    .navbar-right{
+        float:left !important;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    body{
+        padding-top: 60px;
+    }
+    .navbar-brand{
+        height:60px;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-header{
+        margin: 0;
+    }
+    .container > .navbar-collapse, .container > .navbar-header{
+        margin: 0;
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    body{
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+}
