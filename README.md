@@ -6,7 +6,7 @@
 ![Code-Igniter](https://img.shields.io/badge/CodeIgniter-%23EF4223.svg?style=for-the-badge&logo=codeIgniter&logoColor=white)
 ![mysql](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 
-Released in 2017
+Released in 2018
 
 This website was made for a campaing to employees send their musical for carnival. The most voted won some gifts.
 
