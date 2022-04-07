@@ -8,11 +8,10 @@
 
 Released in 2017
 
-This website was made for a campaing to employees send their musical for carnival. The most voted won some gifts. 
+This website was made for a campaing to employees send their musical for carnival. The most voted won some gifts.
 
 ## Screenshots
 
 ![screenshots](https://github.com/wildiney/promotional-website-carnival-send-lyrics/blob/master/screenshots/screenshots-01.png?raw=true)
 
-![screenshots](https://github.com/wildiney/promotional-website-carnival-send-lyrics/blob/master/screenshots/screenshot-02.png?raw=true)
-
+![screenshots](https://github.com/wildiney/promotional-website-carnival-send-lyrics/blob/master/screenshots/screenshots-02.png?raw=true)
