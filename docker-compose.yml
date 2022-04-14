@@ -25,6 +25,9 @@ services:
     image: mysql:5.7
     env_file:
       - ./env/mysql.env
+    volumes:
+      - ./data/carnaval2018.sql:/docker-entrypoint-initdb.d/carnaval2018.sql
+
   # composer:
   #   build:
   #     context: .
